@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+    height: 100vh;
+}
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+header{
+    padding: 40px 4%;
+}
+.flex{
+    display: flex;
+}
+header> .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a{
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+}
+header nav.menu a:hover{
+    color: #fff;
+    transform: scale(1.08);
+    
+}
+header nav ul{
+    list-style-type: none;
+}
+ header .logo img{
+    border-radius: 100%;
+    width: 160px;
+    
+}
+.logo-footer img{
+    border-radius: 100%;
+    width: 100px;
+}
+header nav.menu ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+ .button-contacto button{
+    padding: 10px 40px;
+    font-size:  18px; 
+    font-weight: 600;
+    background-color: #ffd900;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+ .button-contacto button:hover, form .button-enviar input:hover{
+    box-shadow: 0px 0px 8px  #ffd900 ;
+    transform: scale(1.08);
+}
+.redes-sociais img:hover{
+    box-shadow: 0px 0px 20px  #ffd900 ;
+    transform: scale(1.08);
+}
+
+  h2.titulo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+h2.titulo span{
+    color: #ffd900;
+}
+header a img{
+    border-radius: 100%;
+    width: 40px;
+    cursor: pointer;
+}
+section .img-corpo img{
+    border-radius: 100%;
+    width: 300px;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+/*ESTILO DO MENU MOBILE*/
+.button-menu img{
+    width: 80px;
+    height: 90px;
+}
+.menu-mobile{
+    background-color: #000;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.menu-mobile .button-fechar img{
+    width: 40px;
+    height: 50px;
+}
+.menu-mobile .button-fechar{
+    padding: 20px 5%;
+}
+.menu-mobile nav ul{
+    text-align: right;
+}
+.menu-mobile nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}
+.menu-mobile nav ul a:hover{
+    background-color:#ffd900;
+    color: #000;
+}
+.hoverlay-menu{
+    background-color: #000000df;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+.menu-mobile.abrir-menu ~ .hoverlay-menu{
+    display: block;
+}
+.button-menu{
+    display: block;
+}
+@media (min-width:800px) {
+    .button-menu{
+        display: none;
+    }
+}
+
+/*ESTILO DO CORPO*/
+
+section.corpo{
+    padding: 40px 4%;
+}
+section.corpo .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+.corpo h1{
+    color: white;
+    font-size: 42px;
+    line-height: 40px;
+}
+.corpo h1 span{
+    color:#ffd900 ;
+}
+.corpo .texto-corpo p{
+    color: #fff;
+    margin: 40px 0;
+    
+}
+
+    /*Animação da imagem*/
+
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top:30px
+    }}
+   
+    /*Estilo de especialidades*/
+
+
+    section.especialidade{
+        padding: 90px 4%;
+    }
+    section.especialidade .flex{
+        gap: 60px ;
+    }
+    section.especialidade .especialidade-caixa img{
+        background-color: #ffd900;
+        width: 70px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+.especialidade .especialidade-caixa{
+    color: #fff;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .2s;
+}
+.especialidade .especialidade-caixa:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff78;
+}
+.especialidade .especialidade-caixa h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+    /*SObre mim*/
+
+section.sobre-mim{
+    padding: 80px 4%;
+}
+section.sobre-mim .minha-img img{
+    width: 360px;
+    border-radius: 20px;
+}
+section.sobre-mim .flex{
+    align-items: center;
+    gap: 60px;
+}
+.sobre-mim .descrito{
+    color: #fff;
+}
+.sobre-mim .descrito h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+.sobre-mim .descrito h2 span{
+    color: #ffd900;
+    display: block;
+}
+.sobre-mim .descrito p{
+    margin: 20px 0;
+    text-align: justify;
+}
+.redes-sociais a img{
+    width: 40px;
+    border-radius: 50%;
+    background-color: #ffd900;
+    padding: 5px;
+    margin: 0 5px;
+}
+.paragrafo{
+    font-size: 20px;
+}
+
+/*Estilo do formulario*/
+section.formulario{
+    padding: 100px 4%;
+}
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, textarea{
+    width: 100%;
+    background-color: #242424;
+    border: 0;
+    outline: 0;
+    padding: 20px 18px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+form textarea{
+    resize: none;
+    max-height: 500px;
+}form .button-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+form .button-enviar input{
+    width: 120px;
+    background-color: #ffd900;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/*Estilos do meus projects*/
+
+section.meus-projects{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+    
+}
+section.meus-projects .flex{
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.proj-img{
+    width: 290px;
+    height: 460px;
+    background-color: #ffd900;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 3s;
+    border-radius: 40px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.proj-img:hover{
+    background-position: 100% 100%;
+}
+.hoverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000008d;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+.hoverlay:hover{
+    opacity: 1;
+}
+
+
+/*Estilo do rodapé*/
+
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+    align-items: last baseline;
+}
+footer .flex{
+    justify-content:space-between; 
+     
+}
+footer .line-footer{
+    padding: 20px 0;
+    display:flex;
+   
+}
+.borda{
+    border-top: 2px solid #ffd900 ;
+}
+footer .line-footer p img{
+    width: 30px;
+    border-radius: 10%;
+    background-color: #ffd900;
+    padding: 5px;
+    margin: 0 5px;   
+    
+}
+footer .line-footer p a{
+    color: #fff;
+}
+
+
+/* APLICANDO RESPONSIVIDADE*/
+
+@media screen and (max-width: 1020px) {
+
+    .flex{flex-direction: column;
+    }
+    .corpo .flex{
+        flex-direction: column-reverse;
+
+    }
+
+    .menu, .button-contacto{
+        display: none;
+    }
+}
+
+
